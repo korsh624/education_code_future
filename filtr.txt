@@ -1,0 +1,23 @@
+Command — проверка сообщения на команду
+CommandHelp — проверка на команду /help
+CommandPrivacy — проверка на команду /privacy
+CommandSettings — проверка на команду /settings
+CommandStart — проверка на команду /start
+ContentTypeFilter — проверка типа контента
+ExceptionsFilter — исключение для errors_handler
+HashTag — обработка сообщений с #hashtag и $cashtags
+Regexp — регулярное выражение для сообщений callback query
+RegexpCommandsFilter — проверка команды регулярным выражением
+StateFilter — проверка состояния пользователя
+Text — фильтр текста. Работает на большинстве обработчиков
+IDFilter — фильтр для проверки id чата или пользователя
+AdminFilter — проверка на то, является ли пользователь администратором чата
+IsReplyFilter — проверяет, что отправленное сообщение является ответом
+IsSenderContact — проверяет, что пользователь отправил именно свой контакт
+ForwardedMessageFilter — проверка на то, что сообщение переслано
+ChatTypeFilter — проверка типа чата
+
+
+
+
+@dp.message_handler(commands='myCommand', commands_ignore_caption=False)
